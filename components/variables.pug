@@ -1,0 +1,21 @@
+//- M I X I N 
+mixin card__0(url, image, urlproyecto, titulo, descripcion, fecha)
+    .col-sm-6.col-md-6.col-lg-6: .card.mb-3.bg-transparent.card-portafolio.shadow-lg.text-white(style="min-height: 240px;"): .row.my-auto.g-0
+        .col-lg-5.justify-content-center.align-items-center.d-flex: figure 
+            a(href=url, target="_blank" rel="noopener noreferrer"): img.img-fluid(src=image, style="max-height: 145px;" alt="Proyecto Web")
+            figcaption: small
+                |Imagen by
+                a.see-more(href=urlproyecto, target="_blank" rel="noopener noreferrer")  Platzi
+        .col-lg-7: .card-body
+            h5.card-title= titulo
+            p.card-text= descripcion
+            p: a.see-more(href=url, target="_blank" rel="noopener noreferrer") Ver más
+            p.card-text: small.text-muted= fecha
+mixin card__1(url, image, titulo, descripcion, fecha)
+    .col-sm-6.col-md-6.col-lg-6: .card.mb-3.bg-transparent.card-portafolio.shadow-lg.text-white(style="min-height: 240px;"): .row.my-auto.g-0
+        .col-lg-5.justify-content-center.align-items-center.d-flex: figure: a(href=url, target="_blank" rel="noopener noreferrer"): img.img-fluid(src=image, style="max-height: 145px;" alt="Proyecto Web")
+        .col-lg-7: .card-body
+            h5.card-title= titulo
+            p.card-text= descripcion
+            p: a.see-more(href=url, target="_blank" rel="noopener noreferrer") Ver más
+            p.card-text: small.text-muted= fecha

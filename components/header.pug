@@ -1,0 +1,18 @@
+header.sticky-top.py-4.d-lg-none.d-xl-none.d-xxl-none: nav.navbar.navbar-expand-lg: .container-fluid: .contenedor-menu#contenedor-menu
+    p.btn-abrir-menu#btn-abrir-menu: i.bi.bi-house-fill 
+    .elementos-navegacion: ul 
+        li(name="link-menu"): a(href="#") Inicio
+        li(name="link-menu"): a(href="#") Portafolio
+        li(name="link-menu"): a(href="#") Sobre mí
+        li(name="link-menu"): a(href="#contacto") Contacto
+header.sticky-top.d-none.d-lg-block: nav.navbar.navbar-expand-lg.navbar-light.shadow-lg: .container-fluid
+    button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"): span.navbar-toggler-icon
+    a.navbar-brand.mx-3.text-white(href="#") AM
+    .collapse.navbar-collapse.justify-content-end#navbarNav: ul.navbar-nav.text-center.text-white#nav-items
+        li.nav-item.mx-3: a.nav-link(href="#") Inicio
+        li.nav-item.mx-3: a.nav-link(href="#") Portafolio
+        li.nav-item.mx-3: a.nav-link(href="#") Sobre mí
+        li.nav-item.mx-3: a.nav-link(href="#contacto") Contacto
+.container-fluid: .row.align-items-center#loading(style="height: 80vh;"): .col-12.text-center.text-light
+    br
+    .spinner-border(role="status"): span.visually-hidden Cargando...

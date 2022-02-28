@@ -1,0 +1,36 @@
+extend components/plantilla.pug
+block contenidos
+  section.text-center.shadow-lg#portfolio
+    h2.text-white.pb-4.pt-5 &lt;&nbsp; Portafolio &nbsp;/&gt;
+    .row.pb-5.justify-content-center(style="max-width: 90%; margin: 0 auto;")
+      //- TODO MACHINE
+      +card__1('https://carlosarturomt.github.io/toDoMachine-ReactProject/', 'https://www.contentchef.io/images/developers/headless-cms-for-react/top-banner-image.svg', 'ToDo Machine', 'Proyecto donde se utiliza la librería de JavaScript; ReactJS para el desarrollo de una App.', 'Enero, 2022')
+      //- 100tifi.co
+      +card__0('https://carlosarturomt.github.io/100tifi.co/dist/index', 'https://static.platzi.com/media/landing-projects/Proyecto-spa-vainilla.gif', 'https://platzi.com/', '100tifi.co', 'Proyecto del curso SPA con JavaScript Vanilla de Platzi, en el que se implementa el llamado de una API para consulta de información.', 'Enero, 2022')
+      //- SorbitoCafé
+      +card__1('https://sorbitocafe.detexcoco.com/', 'https://detexcoco.com/profesionistas/assets/imgs/otros/Gallery/desktopSorbitoCafe.png', 'SorbitoCafé', 'Elaboración de un sitio web utilizando el framework; Bootstrap, así como los pre procesadores Pug y Sass.', 'Diciembre, 2021')
+      //- WebMath
+      +card__1('https://carlosarturomt.github.io/curso-practico-js/', 'https://static.platzi.com/media/landing-projects/proyecto-practicoJS.png', 'WebMath', 'Elaboración de la estructura de un sitio web con ejercicios básicos de matemáticas implementando JavaScript.', 'Agosto, 2021')
+      //- PLATZI FOOD
+      +card__0('https://carlosarturomt.github.io/PlatziFood/public/dist/', 'https://static.platzi.com/media/landing-projects/tailwind_img-8.png', 'https://platzi.com/', 'Platzi Food', 'Elaboración de la estructura de un sitio web utilizando el framework; Tailwind, así como el pre procesadore Pug.', 'Agosto, 2021')
+      //- PLATZI HAWAI
+      +card__0('https://carlosarturomt.github.io/Platzi-Hawai/dist/', 'https://static.platzi.com/media/landing-projects/Proyecto-Bootstrap.png', 'https://platzi.com/clases/bootstrap/', 'Platzi Hawaii', 'Elaboración de la estructura de un sitio web utilizando el framework; Bootstrap, así como los pre procesadores; Pug y Sass.', 'Julio, 2021')
+      //- PLATZI GAME
+      +card__0('https://carlosarturomt.github.io/platziGames/', 'https://static.platzi.com/media/landing-projects/proyecto-preprocesadores.png', 'https://platzi.com/clases/preprocesadores/', 'Platzi Games', 'Elaboración de la estructura de las páginas de un sitio web utilizando PUG. Definiendo los estilos de cada página implementando Less, Sass y Stylus.', 'Junio, 2021')
+      //- PROFESIONISTAS DE TEXCOCO
+      +card__1('https://detexcoco.com', '../assets/imgs/desktopAgenda.png', 'Profesionistas de Texcoco', 'Proyecto con la finalidad de promover el trabajo de los profesionistas de la región de Texcoco.', 'Actualmente en desarrollo')
+      //- BRAND PRODUCTO DIGITAL
+      +card__0('https://carlosarturomt.github.io/productoDigital/', 'https://static.platzi.com/media/landing-projects/imagen-proyecto-desarrollo-web.gif', 'https://platzi.com/clases/html-css-2019/', 'Brand', 'Página web que se conecta con PayPal para realizar el proceso de pago de los productos ofrecidos.', 'Mayo, 2021')
+      //- SIMON DICE - JS
+      +card__0('https://carlosarturomt.github.io/Fundamentos-de-Js/', 'https://static.platzi.com/media/landing-projects/Proyecto-Fundamentos-Javascript.png', 'https://platzi.com/clases/fundamentos-javascript-2018/', 'Simón Dice', 'Proyecto donde se aplican los fundamentos de JavaScript para el desarrollo de un juego.', 'Febrero, 2021')
+      //- PLATZI VIDEO - JS
+      +card__0('https://carlosarturomt.github.io/platziVideo/index.html/', 'https://static.platzi.com/media/landing-projects/Proyecto-frontend-developer.gif', 'https://platzi.com/escuela-javascript/', 'Platzi Video', 'Proyecto que se irá desarrollando en la Escuela de JavaScript de Platzi con el Stack MERN.', 'Actualmente en desarrollo')
+      //- BATATABIT
+      +card__0('https://carlosarturomt.github.io/MobileFirst/', 'https://static.platzi.com/media/landing-projects/mobile-first_proyecto.gif', 'https://platzi.com/cursos/mobile-first/', 'Batatabit', 'Proyecto desarrollado en el curso Mobile first de Platzi, en el que se destaca la implementación de la metodología BEM para CSS.', 'Diciembre, 2020')
+      //- MOODLE
+      //- +card__1('https://learning.carlosarturomt.com', 'https://carlosarturomt.com/assets/imgs/desktopMoodle.png', 'eLearnin', 'Plataforma para impartir cursos o clases en línea implementado el LCMS Moodle.', 'Septiembre, 2020')
+        section#contacto: .text-center.text-white(style="max-width: 90%; margin: 0 auto; padding-bottom: 4rem;")
+    h2 ¿Te ha gustado?
+    p Si lo deseas juntos podemos crear proyectos similares e incluso mejores.
+    a.btn.btn-contacto(href="mailto:carlosarturomt@gmail.com" target="_blank" rel="noopener noreferrer") Contáctame
+
